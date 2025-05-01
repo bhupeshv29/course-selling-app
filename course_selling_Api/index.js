@@ -23,11 +23,11 @@ async function main() {
     app.listen(3000);
     console.log("listening on port 3000");
 
-    setInterval(() => {
-        fetch('https://course-selling-app-woad.vercel.app/')
-            .then(res => console.log('Keep-alive ping successful'))
-            .catch(err => console.error('Keep-alive ping failed:', err));
-    }, 5 * 60 * 1000); // Ping every 5 minutes
+    // setInterval(() => {
+    //     fetch('https://course-selling-app-woad.vercel.app/')
+    //         .then(res => console.log('Keep-alive ping successful'))
+    //         .catch(err => console.error('Keep-alive ping failed:', err));
+    // }, 5 * 60 * 1000); // Ping every 5 minutes
 }
 
 main()
